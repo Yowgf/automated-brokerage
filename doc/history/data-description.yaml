@@ -1,0 +1,84 @@
+id:
+  type: "int64"
+  range: [1000102, 9900000190]
+  description: "none"
+date:
+  type: "object"
+  range: [20140502T000000, 20150527T000000]
+  description: "none"
+price:
+  type: "int64"
+  range: [75000, 7700000]
+  description: "none"
+bedrooms:
+  type: "int64"
+  range: [0, 33]
+  description: "none"
+bathrooms:
+  type: "float64"
+  range: [0.0, 8.0]
+  description: "none"
+sqft_living:
+  type: "int64"
+  range: [290, 13540]
+  description: "none"
+sqft_lot:
+  type: "int64"
+  range: [520, 1651359]
+  description: "none"
+floors:
+  type: "float64"
+  range: [1.0, 3.5]
+  description: "none"
+waterfront:
+  type: "int64"
+  range: [0, 1]
+  description: "none"
+view:
+  type: "int64"
+  range: [0, 4]
+  description: "none"
+condition:
+  type: "int64"
+  range: [1, 5]
+  description: "none"
+grade:
+  type: "int64"
+  range: [1, 13]
+  description: "none"
+sqft_above:
+  type: "int64"
+  range: [290, 9410]
+  description: "none"
+sqft_basement:
+  type: "int64"
+  range: [0, 4820]
+  description: "none"
+yr_built:
+  type: "int64"
+  range: [1900, 2015]
+  description: "none"
+yr_renovated:
+  type: "int64"
+  range: [0, 2015]
+  description: "none"
+zipcode:
+  type: "int64"
+  range: [98001, 98199]
+  description: "none"
+lat:
+  type: "float64"
+  range: [47.1559, 47.7776]
+  description: "none"
+long:
+  type: "float64"
+  range: [-122.51899999999999, -121.315]
+  description: "none"
+sqft_living15:
+  type: "int64"
+  range: [399, 6210]
+  description: "none"
+sqft_lot15:
+  type: "int64"
+  range: [651, 871200]
+  description: "none"

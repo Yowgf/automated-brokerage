@@ -1,0 +1,14 @@
+2021-02-25
+Alexander Thomas Mol Holmquist
+
+CRISP-DM Phase 2 -- "Data understanding"
+Task 2.1 -- "Collect initial data"
+
+--------------------------------------------------------------------
+
+Output -- Initial data collection report
+
+dataset:
+  located_at: data/home_data.csv
+  origin:
+    https://github.com/rashida048/Datasets/blob/master/home_data.csv
