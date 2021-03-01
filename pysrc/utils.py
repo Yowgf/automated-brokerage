@@ -5,6 +5,8 @@ data mining notebook flow.
 
 from .loading import dataframe
 from .preprocessing import dropUselessCols
+from .preprocessing import formatData
+from .cdm23 import *
 
 def generateDataDescription(outFileName):
     ddFile = open(outFileName, "w")
@@ -22,5 +24,7 @@ def loadPreprocessed():
         dropUselessCols()
     except:
         pass
+    formatData(dataframe)
     
     return dataframe
+

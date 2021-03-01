@@ -49,7 +49,15 @@ def checkDataRanges():
 
     assert(all(attvalues <= 2015))
     print("Ano de renovacao <= 2015")
-    
+
+def formatData(df):
+    affectedInstances = df[df["yr_renovated"] == 0].index
+    df.loc[affectedInstances, "yr_renovated"] = df.loc[affectedInstances, "yr_built"]
+
 def normalize(df):
-    df -= df.min()
-    df /= df.max()
+    mins = df.min()
+    maxs = df.max()
+    maxs[maxs == 0] = 1
+    mins[mins == maxs] = 0
+
+    df = (df - mins) / maxs
