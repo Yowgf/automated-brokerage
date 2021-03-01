@@ -23,7 +23,7 @@ date: Date house was sold
 
 price: Price of the house
 
-bedrooms: Number of Bedrooms/House
+bedrooms: Number of Bedrooms  
 
 bathrooms: Number of bathrooms/bedrooms
 
@@ -85,8 +85,10 @@ grade: overall grade given to the housing unit, based on King County
 
     13 Generally custom designed and built. Mansion level. Large
     amount of highest quality cabinet work, wood trim, marble, entry
-    ways etc.  sqft_above :square footage of house apart from
-    basement
+    ways etc.
+
+sqft_above: square footage of house apart from
+basement
 
 sqft_basement: square footage of the basement
 

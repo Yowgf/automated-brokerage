@@ -2,7 +2,7 @@ from .loading import *
 
 # Auxilia a largar colunas de dataframe
 def dropcol(col):
-    if col not in dataframe.columns:
+    if not col in dataframe.columns:
         raise AttributeError("Column not in dataframe")
         
     dataframe.drop(col, axis=1, inplace=True)
@@ -24,7 +24,7 @@ def showFinalCols():
     datacols = list(dataframe.columns) # Manteremos estas
     print("{} colunas restantes".format(len(datacols)))
     print("Removidas ", [col for col in initialCols if col not in datacols])
-    print(datacols)
+    print("\n", datacols)
         
 def checkDataRanges():
     # Sem entradas faltantes
@@ -46,4 +46,10 @@ def checkDataRanges():
     attvalues = dataframe[att].values
     assert(all(np.logical_or(attvalues == 0, attvalues >= dataframe["yr_built"].values)))
     print("Ano de renovacao >= ano de contrucao")
+
+    assert(all(attvalues <= 2015))
+    print("Ano de renovacao <= 2015")
     
+def normalize(df):
+    df -= df.min()
+    df /= df.max()

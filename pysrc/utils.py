@@ -4,6 +4,7 @@ data mining notebook flow.
 """
 
 from .loading import dataframe
+from .preprocessing import dropUselessCols
 
 def generateDataDescription(outFileName):
     ddFile = open(outFileName, "w")
@@ -15,3 +16,11 @@ def generateDataDescription(outFileName):
         ddFile.write(f"  description: \"none\"\n")
 
     ddFile.close()
+
+def loadPreprocessed():
+    try:
+        dropUselessCols()
+    except:
+        pass
+    
+    return dataframe
